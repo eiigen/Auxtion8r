@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1a1a2e;color:#eee;font-family:'Press Start 2P',monospace;font-size:10px;image-rendering:pixelated;margin:0}
+#app{max-width:480px;margin:0 auto;min-height:100vh;background:#16213e;border-left:4px solid #333;border-right:4px solid #333}
+.screen{padding:16px;padding-bottom:80px;min-height:100vh}
+.menu-screen{display:flex;align-items:center;justify-content:center;text-align:center}
+.menu-box{padding:40px 20px}
+.title{font-size:28px;color:#ffd700;text-shadow:3px 3px 0 #b8860b;margin-bottom:20px;letter-spacing:4px}
+.sub{font-size:8px;color:#aaa;margin-bottom:60px}
+.menu-btns{display:flex;flex-direction:column;gap:16px;max-width:240px;margin:0 auto}
+.btn{font-family:'Press Start 2P',monospace;font-size:10px;padding:14px 20px;border:3px solid #444;cursor:pointer;background:#2a2a4a;color:#fff;text-transform:uppercase;transition:all .1s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 4px 0 #000}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn-primary{background:#ffd700;color:#000;border-color:#b8860b}
+.btn-ghost{background:transparent;border-color:#666;color:#aaa}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #333}
+.coins{font-size:16px;color:#ffd700}
+.inc{font-size:8px;color:#66bb6a}
+.timer{font-size:9px;color:#ff9800}
+.sec-title{font-size:12px;color:#fff;margin-bottom:16px;text-align:center}
+.card{background:#1e2a4a;border:3px solid #333;padding:14px;margin-bottom:12px}
+.card h3{font-size:9px;color:#ffd700;margin-bottom:10px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid .card:first-child{grid-column:1/-1}
+.row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed #333;font-size:8px}
+.row:last-child{border-bottom:none}
+.row.done{color:#66bb6a}
+.auction-grid{display:grid;gap:12px}
+.a-card{background:#1e2a4a;border:3px solid #444;padding:12px;transition:all .2s}
+.a-card:hover{border-color:#ffd700}
+.a-card.sold{opacity:.6}
+.sprite{width:48px;height:48px;margin:0 auto 10px;border:2px solid #000}
+.info{text-align:center;margin-bottom:8px}
+.iname{font-size:9px;color:#fff;margin-bottom:4px}
+.rarity{font-size:8px;margin-bottom:4px}
+.bidinfo{text-align:center;font-size:8px;margin-bottom:8px}
+.cbid{color:#ffd700}
+.npcbid{color:#f44336;margin-top:2px}
+.soldtag{background:#f44336;color:#fff;font-size:8px;padding:4px 8px;text-align:center}
+.bidbtn{background:#ff9800;border-color:#f57c00;color:#000;padding:10px;font-size:9px;width:100%;margin-top:8px}
+.bid-container{display:grid;gap:20px;padding:20px 0}
+.showcase{text-align:center}
+.bigsprite{width:96px;height:96px;margin:0 auto 16px;border:3px solid #000}
+.showcase h2{font-size:14px;margin-bottom:8px}
+.rtag{font-size:10px;margin-bottom:4px}
+.itag{font-size:9px;color:#66bb6a}
+.bidpanel{background:#1e2a4a;border:3px solid #444;padding:16px}
+.cbid-display{text-align:center;margin-bottom:16px}
+.blabel{font-size:8px;color:#aaa}
+.bamount{font-size:18px;color:#ffd700}
+.npcstatus{margin-bottom:16px}
+.npcind{display:flex;justify-content:space-between;font-size:9px;padding:8px;border:2px solid #444;margin-bottom:4px}
+.npcind.idle{color:#888;justify-content:center}
+.bidctrls{display:flex;flex-direction:column;gap:8px}
+.bidaction{background:#ffd700;color:#000;border-color:#b8860b;padding:10px;font-size:9px;width:100%;margin-bottom:8px}
+.passbtn{background:#f44336;border-color:#d32f2f;padding:10px;font-size:9px}
+.backbtn{background:transparent;border:none;color:#aaa;font-size:10px;padding:8px 12px;box-shadow:none}
+.coll-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.coll-slot{aspect-ratio:1;border:3px solid #333;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px;background:#1a1a2e}
+.coll-slot.empty{opacity:.4}
+.ssprite{width:24px;height:24px;border:1px solid #000;margin-bottom:4px}
+.sname{font-size:5px;text-align:center;color:#aaa}
+.scount{font-size:6px;color:#ffd700}
+.tabs{display:flex;gap:8px;margin-bottom:16px}
+.tab{flex:1;font-family:'Press Start 2P',monospace;font-size:8px;padding:10px;border:2px solid #444;background:#1e2a4a;color:#aaa}
+.tab.active{background:#ffd700;color:#000;border-color:#b8860b}
+.tasklist{display:flex;flex-direction:column;gap:8px}
+.taskitem{display:flex;align-items:center;justify-content:space-between;padding:12px;background:#1e2a4a;border:2px solid #444}
+.taskitem.done{border-color:#66bb6a;background:#1a3a1a}
+.taskitem.claimed{opacity:.5}
+.taskinfo{flex:1}
+.taskname{font-size:9px;color:#fff;margin-bottom:4px}
+.taskdesc{font-size:7px;color:#aaa}
+.treward{font-size:8px;color:#ffd700;margin-right:8px}
+.claimedtag{font-size:7px;color:#888}
+.pendtag{font-size:7px;color:#aaa}
+.claimbtn{background:#66bb6a;border-color:#43a047;padding:8px 12px;font-size:8px}
+.gall-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.gall-item{aspect-ratio:1;border:2px solid #333;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px;background:#1a1a2e}
+.gall-item.locked{opacity:.3}
+.gsprite{width:24px;height:24px;border:1px solid #000;margin-bottom:4px}
+.gname{font-size:5px;text-align:center;color:#aaa}
+.grarity{font-size:5px}
+.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:flex;background:#0f0f23;border-top:3px solid #444;padding:8px 4px;gap:2px}
+.nav-btn{flex:1;font-family:'Press Start 2P',monospace;font-size:6px;padding:10px 6px;border:2px solid #333;background:#1e2a4a;color:#aaa}
+.nav-btn.active{background:#ffd700;color:#000;border-color:#b8860b}
