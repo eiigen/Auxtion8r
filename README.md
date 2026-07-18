@@ -1,4 +1,4 @@
-# Auxtion8r — Pixel-Art Auction Collection Game
+# Auxtion8r - Pixel-Art Auction Collection Game
 
 A single-player browser game where you earn gold coins, bid on pixel-art items against NPC opponents, and generate passive income.
 
@@ -10,6 +10,13 @@ A single-player browser game where you earn gold coins, bid on pixel-art items a
 - Daily, weekly, and permanent task rewards
 - Passive income that accumulates offline
 - Browser-local save data with checksum validation
+
+## How to Play
+1. Open `index.html`
+2. Click "New Game" to start with 100 coins
+3. Bid on items in the Auction House
+4. Complete tasks for bonus coins
+5. Collect items to earn passive income
 
 ## NPCs
 | NPC | Style | Behavior |
