@@ -26,7 +26,7 @@ const ITEMS = [
   { id: 25, name: "Silver Locket", rarity: "uncommon", category: "artifact", income: 3, bid: 80 },
   { id: 26, name: "Herb Satchel", rarity: "uncommon", category: "consumable", income: 0, bid: 45 },
   { id: 27, name: "Bronze Shield", rarity: "uncommon", category: "decoration", income: 3, bid: 90 },
-  { id: 28, name: "Inkwell & Pen", rarity: "uncommon", category: "artifact", income: 3, bid: 50 },
+  { id: 28, name: "Inkwell and Pen", rarity: "uncommon", category: "artifact", income: 3, bid: 50 },
   { id: 29, name: "Wool Cloak", rarity: "uncommon", category: "wearable", income: 3, bid: 68 },
   { id: 30, name: "Stained Glass", rarity: "uncommon", category: "decoration", income: 3, bid: 62 },
   { id: 31, name: "Gear Pendant", rarity: "uncommon", category: "artifact", income: 3, bid: 75 },
@@ -60,5 +60,5 @@ const RARITY = {
 };
 
 const ITEM_BY_ID = {};
-ITEMS.forEach(i => ITEM_BY_ID[i.id] = i);
+ITEMS.forEach(function(i) { ITEM_BY_ID[i.id] = i; });
 function getItem(id) { return ITEM_BY_ID[id] || null; }
