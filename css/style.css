@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#1a1a2e;color:#eee;font-family:'Press Start 2P',monospace;font-size:10px;image-rendering:pixelated;margin:0}
+body{background:#1a1a2e;color:#eee;font-family:"Press Start 2P",monospace;font-size:10px;image-rendering:pixelated;margin:0}
 #app{max-width:480px;margin:0 auto;min-height:100vh;background:#16213e;border-left:4px solid #333;border-right:4px solid #333}
 .screen{padding:16px;padding-bottom:80px;min-height:100vh}
 .menu-screen{display:flex;align-items:center;justify-content:center;text-align:center}
@@ -8,7 +8,7 @@ body{background:#1a1a2e;color:#eee;font-family:'Press Start 2P',monospace;font-s
 .title{font-size:28px;color:#ffd700;text-shadow:3px 3px 0 #b8860b;margin-bottom:20px;letter-spacing:4px}
 .sub{font-size:8px;color:#aaa;margin-bottom:60px}
 .menu-btns{display:flex;flex-direction:column;gap:16px;max-width:240px;margin:0 auto}
-.btn{font-family:'Press Start 2P',monospace;font-size:10px;padding:14px 20px;border:3px solid #444;cursor:pointer;background:#2a2a4a;color:#fff;text-transform:uppercase;transition:all .1s}
+.btn{font-family:"Press Start 2P",monospace;font-size:10px;padding:14px 20px;border:3px solid #444;cursor:pointer;background:#2a2a4a;color:#fff;text-transform:uppercase;transition:all .1s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 4px 0 #000}
 .btn:active{transform:translateY(1px);box-shadow:none}
 .btn-primary{background:#ffd700;color:#000;border-color:#b8860b}
@@ -62,7 +62,7 @@ body{background:#1a1a2e;color:#eee;font-family:'Press Start 2P',monospace;font-s
 .sname{font-size:5px;text-align:center;color:#aaa}
 .scount{font-size:6px;color:#ffd700}
 .tabs{display:flex;gap:8px;margin-bottom:16px}
-.tab{flex:1;font-family:'Press Start 2P',monospace;font-size:8px;padding:10px;border:2px solid #444;background:#1e2a4a;color:#aaa}
+.tab{flex:1;font-family:"Press Start 2P",monospace;font-size:8px;padding:10px;border:2px solid #444;background:#1e2a4a;color:#aaa}
 .tab.active{background:#ffd700;color:#000;border-color:#b8860b}
 .tasklist{display:flex;flex-direction:column;gap:8px}
 .taskitem{display:flex;align-items:center;justify-content:space-between;padding:12px;background:#1e2a4a;border:2px solid #444}
@@ -82,5 +82,5 @@ body{background:#1a1a2e;color:#eee;font-family:'Press Start 2P',monospace;font-s
 .gname{font-size:5px;text-align:center;color:#aaa}
 .grarity{font-size:5px}
 .nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:flex;background:#0f0f23;border-top:3px solid #444;padding:8px 4px;gap:2px}
-.nav-btn{flex:1;font-family:'Press Start 2P',monospace;font-size:6px;padding:10px 6px;border:2px solid #333;background:#1e2a4a;color:#aaa}
+.nav-btn{flex:1;font-family:"Press Start 2P",monospace;font-size:6px;padding:10px 6px;border:2px solid #333;background:#1e2a4a;color:#aaa}
 .nav-btn.active{background:#ffd700;color:#000;border-color:#b8860b}
